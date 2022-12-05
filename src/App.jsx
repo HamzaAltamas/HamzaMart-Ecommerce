@@ -1,7 +1,7 @@
 import React from "react";
 
 const App = () => {
-  return <div>Altamas</div>;
+  return <div className="bg-red-500">Altamas</div>;
 };
 
 export default App;
