@@ -11,7 +11,7 @@ const Header = () => {
   let ref = useRef();
   useEffect(() => {
     document.body.addEventListener("click", (e) => {
-      console.log(e.target);
+      // console.log(e.target);
       if (ref.current.contains(e.target)) {
         setShow(true);
       } else {
@@ -21,21 +21,42 @@ const Header = () => {
   }, []);
   return (
     <>
-      <div className=" bg-orange shadow-lg">
+      <div className=" bg-orange shadow-lg ">
         <Container>
           <Flex className="flex justify-between">
             <div>
-              <Dorpdown className="hover:text-white " dropef={ref}>
-                <p className="flex items-center gap-x-1 duration-500">
+              <Dorpdown dropef={ref} className="relative">
+                <p className="flex items-center gap-x-1  duration-500">
                   <HiBars3CenterLeft /> Shop by category
                 </p>
                 {show && (
-                  <List className="absolute duration-500">
-                    <ListItem item="HAmza" />
-
-                    <ListItem item="HAmza" />
-                    <ListItem item="HAmza" />
-                    <ListItem item="HAmza" />
+                  <List className="absolute w-[263px] bg-white shadow-lg rounded-md top-7">
+                    <ListItem
+                      item="Accesorries"
+                      className="py-[15px]  px-[21px] border-b border-solid border-[#d1d1d1]  hover:text-orange duration-500 hover:pl-[40px]"
+                    />
+                    <ListItem
+                      item="Furniture"
+                      className="py-[15px] hover:font-semibold px-[21px] border-b border-solid border-[#d1d1d1] hover:text-orange duration-500 hover:pl-[40px]"
+                    />
+                    <ListItem
+                      item="Electronics"
+                      className="py-[15px] px-[21px]  border-b border-solid border-[#d1d1d1] hover:text-orange duration-500 hover:pl-[40px]"
+                    />
+                    <ListItem
+                      item="Clothes"
+                      className="py-[15px] px-[21px] border-b border-solid border-[#d1d1d1]
+                      hover:text-orange duration-500 hover:pl-[40px]"
+                    />
+                    <ListItem
+                      item="Bags"
+                      className="py-[15px] px-[21px] border-b border-solid border-[#d1d1d1]
+                      hover:text-orange duration-500 hover:pl-[40px]"
+                    />
+                    <ListItem
+                      item="Home appliances"
+                      className="py-[15px] px-[21px] hover:text-orange duration-200 hover:pl-[40px]"
+                    />
                   </List>
                 )}
               </Dorpdown>
