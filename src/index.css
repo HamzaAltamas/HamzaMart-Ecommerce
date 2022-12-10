@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html{
+    overflow-x: hidden !important;
+}
+/* slick */
+.slick-dots ul{
+  display: flex !important;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.slick-dots ul li{
+  padding: 10px 0 !important;
+}
+/* slick */

@@ -7,9 +7,15 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Layout/Navbar";
 import RootLayout from "./components/Layout/RootLayout";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
 
 let router = createBrowserRouter(
-  createRoutesFromElements(<Route path="/" element={<RootLayout />}></Route>)
+  createRoutesFromElements(
+  <Route path="/" element={<RootLayout />}>
+      <Route index element={<Home />}></Route>
+      <Route path="/about" element={<About/>}></Route>
+  </Route>)
 );
 
 const App = () => {
