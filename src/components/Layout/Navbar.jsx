@@ -11,11 +11,7 @@ const Navbar = () => {
 
   useEffect(() => {
     let scrollWidt = (e) => {
-      if (window.innerWidth <= 1024) {
-        setShow(false);
-      } else {
-        setShow(true);
-      }
+      window.innerWidth <= 1024 ?     setShow(false)  :  setShow(true);
     };
     scrollWidt();
     window.addEventListener("resize", scrollWidt);
@@ -43,10 +39,12 @@ const Navbar = () => {
                   <ListItem
                     className="relative duration-100 after:content-[''] after:absolute after:left-0 after:bg-orange  after:bottom-[-1px] after:w-[0] after:h-[2px]  hover:after:w-[100%] after:duration-200 my-2.5 lg:my-0 "
                     item="Home"
+                    href="/"
                   />
                   <ListItem
                     className="relative duration-100 after:content-[''] after:absolute after:left-0 after:bg-orange  after:bottom-[-1px] after:w-[0] after:h-[2px]  hover:after:w-[100%] after:duration-200 my-2.5 lg:my-0"
                     item="About"
+                    href="/about"
                   />
                   <ListItem
                     className="relative duration-100 after:content-[''] after:absolute after:left-0 after:bg-orange  after:bottom-[-1px] after:w-[0] after:h-[2px]  hover:after:w-[100%] after:duration-200 my-2.5 lg:my-0"
