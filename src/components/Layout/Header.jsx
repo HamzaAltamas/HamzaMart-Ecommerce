@@ -54,32 +54,32 @@ const Header = () => {
                   <HiBars3CenterLeft className="mr-[15px] lg:mr-0 md:mr-0 text-[20px]"/> <span className="hidden md:hidden lg:block ">Shop by category</span>
                 </p>
                 {categoryShow && (
-                  <List className="absolute w-[263px] bg-white shadow-lg rounded-md top-7 font-nunito z-[99999]">
+                  <List className="absolute w-[180px] lg:w-[263px] bg-white shadow-lg lg:rounded-md top-7 font-nunito z-[99999] text-sm md:text-md lg:text-lg rounded-sm ">
                     <ListItem
                       item="Accesorries"
-                      className="py-[15px]  px-[21px] border-b border-solid border-[#d1d1d1]  hover:text-orange duration-500 hover:pl-[40px]"
+                      className="  py-[10px] px-[15px] lg:py-[15px] lg:px-[21px] border-b border-solid border-[#d1d1d1]  hover:text-orange duration-500 hover:pl-[40px]"
                     />
                     <ListItem
                       item="Furniture"
-                      className="py-[15px] hover:font-semibold px-[21px] border-b border-solid border-[#d1d1d1] hover:text-orange duration-500 hover:pl-[40px]"
+                      className="py-[10px] px-[15px] lg:py-[15px] lg:px-[21px] hover:font-semibold  border-b border-solid border-[#d1d1d1] hover:text-orange duration-500 hover:pl-[40px]"
                     />
                     <ListItem
                       item="Electronics"
-                      className="py-[15px] px-[21px]  border-b border-solid border-[#d1d1d1] hover:text-orange duration-500 hover:pl-[40px]"
+                      className="py-[10px] px-[15px] lg:py-[15px] lg:px-[21px] border-b border-solid border-[#d1d1d1] hover:text-orange duration-500 hover:pl-[40px]"
                     />
                     <ListItem
                       item="Clothes"
-                      className="py-[15px] px-[21px] border-b border-solid border-[#d1d1d1]
+                      className="py-[10px] px-[15px] lg:py-[15px] lg:px-[21px] border-b border-solid border-[#d1d1d1]
                       hover:text-orange duration-500 hover:pl-[40px]"
                     />
                     <ListItem
                       item="Bags"
-                      className="py-[15px] px-[21px] border-b border-solid border-[#d1d1d1]
+                      className="py-[10px] px-[15px] lg:py-[15px] lg:px-[21px] border-b border-solid border-[#d1d1d1]
                       hover:text-orange duration-500 hover:pl-[40px]"
                     />
                     <ListItem
                       item="Home appliances"
-                      className="py-[15px] px-[21px] hover:text-orange duration-500 hover:pl-[40px]"
+                      className="py-[10px] px-[15px] lg:py-[15px] lg:px-[21px] hover:text-orange duration-500 hover:pl-[40px]"
                     />
                   </List>
                 )}
@@ -88,7 +88,7 @@ const Header = () => {
             {/* searct bar */}
             <div className="w-[600px] relative overflow-hidden mr-2 lg:mr-0">
               <Searchbar placeholder="Search here..." className="font-nunito shadow-lg w-full py-1 px-1 lg:py-[10px] lg:px-5
-               border-none outline-none rounded-md" searchref={searchRef} />
+               border-none outline-none rounded-sm md:rounded-md " searchref={searchRef} />
               <div className="absolute top-1 lg:top-[23%]  right-2 lg:right-3 text-[25px] duration-500 hover:text-orange"
                 style={{
                   transform: 
@@ -103,14 +103,14 @@ const Header = () => {
                 {showlogin &&
                   <Dorpdown 
                   >
-                    <List className="absolute z-[99999]  right-[40px]  w-[263px] bg-white shadow-lg rounded-md top-7 font-nunito overflow-hidden">
+                    <List className="absolute z-[99999]  right-[40px] w-[180px]  lg:w-[263px] bg-white shadow-lg rounded-sm lg:rounded-md top-7 font-nunito overflow-hidden text-sm md:text-md lg:text-lg">
                     <ListItem
                       item="My Account"
-                      className="py-[15px] text-center  px-[21px] border-b border-solid border-[#d1d1d1]  hover:text-white duration-500 hover:bg-orange"
+                      className="py-[10px] px-[15px] lg:py-[15px] lg:px-[21px] text-center   border-b border-solid border-[#d1d1d1]  hover:text-white duration-500 hover:bg-orange"
                     />
                     <ListItem
                       item="Log Out"
-                      className="py-[15px] text-center hover:font-semibold px-[21px] hover:text-white  duration-500 hover:bg-orange"
+                      className=" text-center hover:font-semibold py-[10px] px-[15px] lg:py-[15px] lg:px-[21px] hover:text-white  duration-500 hover:bg-orange"
                     />
                    
                     

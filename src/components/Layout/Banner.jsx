@@ -1,65 +1,95 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Images from './Images';
-import { Link } from 'react-router-dom';
+import { Link, redirect } from 'react-router-dom';
 
 const Banner = () => {
-
+let [dotActive,setDotActive] = useState(0)
    let settings = {
       dots: true,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-    //   autoplay: true,
-    //   autoplaySpeed: 2000,
+      autoplay: true,
+      autoplaySpeed: 2000,
        pauseOnHover: true,
-       arrows: true,
-    //     appendDots: dots => (
-    //     <div
-    //       style={{
-    //         padding: "10px"
-    //       }}
-    //     >
-    //       <ul style={{ display:"block"}}> {dots} </ul>
-    //     </div>
-    //   ),
-    //   customPaging: i => (
-    //     <div
-    //       style={{
-    //         width: "30px",
-    //         color: "blue",
-    //         borderRight: "3px red solid",
-    //       }}
-    //     >
-    //       0{i + 1}
-    //     </div>
-    //   )
+     arrows: true,
+       beforeChange: (prev, next) => {
+    setDotActive(next);
+  },
+        appendDots: dots => (
+        <div>
+          <ul style={{ display:"block"}}> {dots} </ul>
+        </div>
+      ),
+      customPaging: i => (
+        <div
+          style={
+            i === dotActive ?
+              {
+              fontFamily: "'Nunito', sans-serif",
+              width: "30px",
+            color: "black",
+            borderRight: "3px black solid",
+            padding: "15px 15px 15px 0",
+                position: "absolute",
+                fontWeight: "bold",
+                color: "black",
+           
+        }
+          :
+              {
+                fontFamily: "'Nunito', sans-serif",
+                width:"30px",
+                color: "black",
+            borderRight: "3px white solid",
+            padding: "15px 15px 15px 0",
+                position: "absolute",
+                fontWeight: "bold",
+                color: "transparent",
+              fontWeight:"bold",
+              }}
+        
+        >
+          0{i + 1}
+        </div>
+      )
     };
 
     
   return (
       <>
-       <div>
-        <Slider {...settings}>
+       <div className='h-[1000px]'>
+        <Slider  {...settings}>
           <Link>
-           <div><Images imgsrc="../src/assets/images/banner.png"/></div>
+           <div><Images className="w-full h-auto" imgsrc="../src/assets/images/banner.png"/></div>
           </Link>
           <div>
-            <h3>2bdfg</h3>
+           <Link>
+           <div><Images className="w-full h-auto" imgsrc="../src/assets/images/banner.png"/></div>
+          </Link>
           </div>
           <div>
-            <h3>3bgdb</h3>
+             <Link>
+           <div><Images className="w-full h-auto" imgsrc="../src/assets/images/banner.png"/></div>
+          </Link>
           </div>
           <div>
-            <h3>4gfbdgggggggggg</h3>
+             <Link>
+           <div><Images className="w-full h-auto" imgsrc="../src/assets/images/banner.png"/></div>
+          </Link>
           </div>
           <div>
-            <h3>5</h3>
+             <Link>
+           <div><Images className="w-full h-auto" imgsrc="../src/assets/images/banner.png"/></div>
+          </Link>
           </div>
           <div>
-            <h3>6gfbfgb</h3>
+             <Link>
+           <div><Images className="w-full h-auto" imgsrc="../src/assets/images/banner.png"/></div>
+          </Link>
           </div>
         </Slider>
       </div>
