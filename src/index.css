@@ -5,13 +5,48 @@
 html{
     overflow-x: hidden !important;
 }
-/* slick */
-.slick-dots ul{
-  display: flex !important;
-  flex-direction: column;
-  flex-wrap: wrap;
+/* banner slick design */
+.slick-dots{
+
+ position: absolute;
+ top: 50%;
+ left: 8%;
+ color: black;
+ width: 20px;
+ transform: translateY(-50%);
+ -webkit-transform: translateY(-50%);
+ -moz-transform: translateY(-50%);
+ -ms-transform: translateY(-50%);
+ -o-transform: translateY(-50%);
 }
+
 .slick-dots ul li{
-  padding: 10px 0 !important;
+ margin: 13px 0 !important;
+
 }
+/* .slick-dots ul li div{
+  width: 40px !important;
+} */
 /* slick */
+
+/* nav sroll functionality */
+.nav-wrapper{
+  transition: 1.5s;
+  -webkit-transition: 1s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+}
+.up{
+  position: fixed;
+   width: 100%;
+  top: -200px;
+  z-index: 999999999999;
+}
+.down{
+ top: 0;
+  position: sticky;
+   width: 100%;
+  
+  z-index: 999999999999;
+}
