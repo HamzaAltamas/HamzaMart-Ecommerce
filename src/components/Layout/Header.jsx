@@ -88,8 +88,8 @@ const Header = () => {
             {/* searct bar */}
             <div className="w-[600px] relative overflow-hidden mr-4 lg:mr-0">
               <Searchbar placeholder="Search here..." className="font-nunito shadow-lg w-full py-1 px-1 lg:py-[10px] lg:px-5
-               border-none outline-none rounded-sm md:rounded-md " searchref={searchRef} />
-              <div className="absolute top-1 lg:top-[23%]  right-2 lg:right-3 text-[25px] duration-500 hover:text-orange"
+               border-none outline-none rounded-sm md:rounded-md text-[12px] md:text-lg lg:text-lg" searchref={searchRef} />
+              <div className="absolute top-[7px] md:top-2 lg:top-[23%]  right-2 lg:right-3  duration-500 hover:text-orange text-[18px] md:text-[25px] lg:text-[30px]"
                 style={{
                   transform: 
                 !showSearchBar ? "translateX(100px)":"translateX(0)" }}>
