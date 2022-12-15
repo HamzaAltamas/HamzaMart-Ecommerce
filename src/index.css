@@ -8,9 +8,12 @@ html{
 body{
     overflow-x: hidden !important;
 }
+*::selection{
+  background-color: #FF9900;
+  color: #fff;
+}
 /* banner slick design */
 .slick-dots{
-
  position: absolute;
  top: 50%;
  left: 8%;
@@ -27,18 +30,14 @@ body{
  margin: 13px 0 !important;
 
 }
-
 @media (max-width:576px) {
    .slick-dots ul li{
  margin:  -2px 0 !important;
-
 }
 .slick-dots{
  left: 4%;
 }
-
 }
-
 /* slick */
 
 /* nav sroll functionality */
@@ -56,9 +55,8 @@ body{
   z-index: 999999999999;
 }
 .down{
- top: 0;
-  position: sticky;
-   width: 100%;
-  
-  z-index: 999999999999;
+ top: 0 !important;
+  position: fixed !important;
+   width: 100% !important;
+  z-index: 999999999999 !important;
 }
