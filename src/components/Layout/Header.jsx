@@ -86,7 +86,7 @@ const Header = () => {
               </Dorpdown>
             </div>
             {/* searct bar */}
-            <div className="w-[600px] relative overflow-hidden mr-2 lg:mr-0">
+            <div className="w-[600px] relative overflow-hidden mr-4 lg:mr-0">
               <Searchbar placeholder="Search here..." className="font-nunito shadow-lg w-full py-1 px-1 lg:py-[10px] lg:px-5
                border-none outline-none rounded-sm md:rounded-md " searchref={searchRef} />
               <div className="absolute top-1 lg:top-[23%]  right-2 lg:right-3 text-[25px] duration-500 hover:text-orange"
@@ -96,7 +96,7 @@ const Header = () => {
                 <BiSearchAlt 
                 /></div>
             </div>
-            <div className="flex items-center gap-x-[15px] 
+            <div className="flex items-center gap-x-[25px] 
             md:gap-x-[30px]  lg:gap-x-[40px] relative">
               {/* login dropdown */}
               <div className="flex items-center" ref={loginRef}><div className="flex text-orange hover:text-white duration-500"><FaUserAlt /><AiOutlineCaretDown className="hidden md:block lg:block"/></div>
@@ -119,7 +119,7 @@ const Header = () => {
         
               </div>
               {/* cart dropdown */}
-              <div  ref={cartRef}><HiShoppingCart className="hover:text-white text-orange duration-500 text-[20px] mt-1" />
+              <div  ref={cartRef}><HiShoppingCart className="hover:text-white text-orange duration-500 text-[20px] mt-[2px]" />
               {showCart &&
                   <Dorpdown className="fixed z-[99999] w-[90%] md:w-[360px] lg:w-[360px]  right-1 md:right-5 lg:right-10 shadow-lg bg-white rounded-sm font-nunito overflow-hidden">
                     <div>

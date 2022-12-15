@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-white ">
+      <nav className="bg-white">
         <Container>
           <Flex className="lg:flex justify-between  ">
             <div className="w-[20%] ">

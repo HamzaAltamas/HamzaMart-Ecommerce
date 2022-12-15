@@ -1,10 +1,12 @@
 import React from 'react'
+import AdditionalInfo from '../components/Layout/AdditionalInfo'
 import Banner from '../components/Layout/Banner'
 
 const Home = () => {
   return (
       <>
-          <Banner/>
+      <Banner />
+      <AdditionalInfo/>
     </>
   )
 }
