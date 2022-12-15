@@ -5,6 +5,9 @@
 html{
     overflow-x: hidden !important;
 }
+body{
+    overflow-x: hidden !important;
+}
 /* banner slick design */
 .slick-dots{
 
@@ -24,9 +27,18 @@ html{
  margin: 13px 0 !important;
 
 }
-/* .slick-dots ul li div{
-  width: 40px !important;
-} */
+
+@media (max-width:576px) {
+   .slick-dots ul li{
+ margin:  -2px 0 !important;
+
+}
+.slick-dots{
+ left: 4%;
+}
+
+}
+
 /* slick */
 
 /* nav sroll functionality */
