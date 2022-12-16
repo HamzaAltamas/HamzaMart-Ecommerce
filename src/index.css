@@ -38,7 +38,7 @@ body{
  left: 4%;
 }
 }
-/* slick */
+/* banner slick */
 
 /* nav sroll functionality */
 .nav-wrapper{
@@ -59,4 +59,77 @@ body{
   position: fixed !important;
    width: 100% !important;
   z-index: 999999999999 !important;
+}
+
+/* product slide prev and next  button sstyling */
+.producSlide-next{
+  background-color: #FF9900 !important;
+  position: absolute;
+  top: 35% ;
+  transform: translate(-50%);
+  right: -46px ;
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: .5s;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+.producSlide-prev{
+  background-color: #FF9900 !important;
+  position: absolute;
+  top: 35% ;
+  transform: translate(-50%);
+  left: 0 ;
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition:.5s ;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  -webkit-transition:.5s ;
+  -moz-transition:.5s ;
+  -ms-transition:.5s ;
+  -o-transition:.5s ;
+}
+.products-slick .slick-list{
+  padding: 0 0 20px 0;
+}
+
+.producSlide-prev:hover{
+   background-color: white !important;
+  color: #FF9900;
+box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+.producSlide-next:hover{
+  background-color: white !important;
+  color: #FF9900;
+box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }

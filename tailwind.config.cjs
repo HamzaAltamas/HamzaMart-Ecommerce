@@ -12,7 +12,8 @@ module.exports = {
       colors: {
         orange: "#FF9900",
         blackHov: "#4e4e4c",
-        lightBorder:"#999999",
+        lightBorder: "#999999",
+        ashText:"#9e9e9e",
       },
     },
   },
