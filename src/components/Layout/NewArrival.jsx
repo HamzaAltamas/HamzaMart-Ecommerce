@@ -4,30 +4,10 @@ import Container from './Container'
 import Heading from './Heading'
 import "slick-carousel/slick/slick.css"; 
 import ProductCard from './ProductCard';
-import { FaArrowLeft, FaArrowRight} from 'react-icons/fa'
+import SampleNextArrow from './SampleNextArrow';
+import SamplePrevArrow from './SamplePrevArrow';
 
 
-function SampleNextArrow(props) {
-  const { onClick } = props;
-  return (
-    <div
-      className="producSlide-next"
-      onClick={onClick}
-    >
-    <FaArrowRight/>
-    </div>
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { onClick } = props;
-  return (
-    <div
-      className="producSlide-prev"
-      onClick={onClick}
-    ><FaArrowLeft/></div>
-  );
-}
 
 
 const NewArrival = () => {
@@ -63,7 +43,8 @@ const NewArrival = () => {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            arrows:false,
           }
         }
      ]
@@ -75,53 +56,42 @@ const NewArrival = () => {
         <div>
         <div>
         <Slider {...settings}>
-          <div>
             <ProductCard
               image="../src/assets/images/product1.png"   
               badge={true}    
             />
-          </div>
-          <div>
             <ProductCard
               image="../src/assets/images/product2.png"   
               badge={false}    
             />
-          </div><div>
             <ProductCard
               image="../src/assets/images/product1.png"   
               badge={false}    
             />
-          </div><div>
             <ProductCard
               image="../src/assets/images/product2.png"   
               badge={false}    
             />
-          </div><div>
             <ProductCard
               image="../src/assets/images/product1.png"   
               badge={true}    
             />
-          </div><div>
             <ProductCard
               image="../src/assets/images/product1.png"   
               badge={false}    
             />
-          </div><div>
             <ProductCard
               image="../src/assets/images/product1.png"   
               badge={false}    
             />
-          </div><div>
             <ProductCard
               image="../src/assets/images/product1.png"   
               badge={true}    
             />
-          </div><div>
             <ProductCard
               image="../src/assets/images/product1.png"   
               badge={false}    
             />
-          </div>
         </Slider>
           </div>
         </div>
@@ -130,4 +100,4 @@ const NewArrival = () => {
   )
 }
 
-export default NewArrival
+export default NewArrival;
