@@ -21,10 +21,10 @@ const Navbar = () => {
     <>
       <nav className="bg-white">
         <Container>
-          <Flex className="lg:flex justify-between  ">
+          <Flex className="lg:flex justify-between  items-center">
             <div className="w-[20%] ">
               <Images
-                className="w-[100%] md:w-[50%] lg:w-[60%] "
+                className="w-[100px] md:w-[120px] lg:w-[150px]"
                 imgsrc="../src/assets/images/logo.png"
               />
             </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="w-full md:w-full lg:w-[60%] lg:flex lg:justify-end md:justify-end items-center ">
               <HiOutlineBars3BottomRight
                 className="ml-auto mt-2 md:mt-2
-                  text-[25px] lg:text-[30px] lg:hidden absolute top-2.5 right-2.5"
+                  text-[25px] lg:text-[30px] lg:hidden absolute top-2.5 right-2.5 sm:mb-2"
                 onClick={() => setShow(!show)}
               />
               {show && (

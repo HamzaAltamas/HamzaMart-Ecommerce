@@ -8,7 +8,7 @@ import {AiFillStar} from "react-icons/ai"
 
 const ProductCard = ({image,badge}) => {
   return (
-      <div className='px-[5px] font-nunito '>
+      <div className='px-[10px] font-nunito '>
           <div className='w-full group shadow-md hover:shadow-xl duration-500 rounded-md overflow-hidden '>
             <div className='relative w-full overflow-hidden group border-orange border-b' >
               <Images className="w-full h-auto" imgsrc={image} />
