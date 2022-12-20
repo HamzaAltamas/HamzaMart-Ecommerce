@@ -9,11 +9,13 @@ import Navbar from "./components/Layout/Navbar";
 import RootLayout from "./components/Layout/RootLayout";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
+import Shop from "./Pages/Shop";
 
 let router = createBrowserRouter(
   createRoutesFromElements(
   <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />}></Route>
+      <Route path="/shop" element={<Shop />}></Route>
       <Route path="/about" element={<About/>}></Route>
   </Route>)
 );

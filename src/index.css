@@ -56,8 +56,12 @@ body{
 }
 .down{
  top: 0 !important;
-  position: fixed !important;
+  position: static !important;
    width: 100% !important;
   z-index: 999999999999 !important;
 }
 
+/* slick list padding */
+.products-slick .slick-list{
+  padding-bottom: 20px !important;
+}

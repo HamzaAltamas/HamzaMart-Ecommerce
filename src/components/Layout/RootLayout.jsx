@@ -21,7 +21,7 @@ const RootLayout = () => {
     <>
       <div className={`nav-wrapper ${navScroll ? "up" : "down"}`}>
         <Navbar />
-      <Header />
+        <Header />
       </div>
       
       <Outlet />
