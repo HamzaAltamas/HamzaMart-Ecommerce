@@ -10,7 +10,7 @@ import SamplePrevArrow from './SamplePrevArrow';
 
 
 
-const NewArrival = () => {
+const Offers = () => {
    var settings = {
       infinite: true,
      speed: 500,
@@ -52,7 +52,7 @@ const NewArrival = () => {
   return (
       <div className='mt-10 md:mt-[70px] lg:mt-[100px] products-slick'>
         <Container>
-        <Heading title="New Arrivals" />  
+        <Heading title="Special Offers" />  
         <div>
         <div>
         <Slider {...settings}>
@@ -100,4 +100,4 @@ const NewArrival = () => {
   )
 }
 
-export default NewArrival;
+export default Offers;
