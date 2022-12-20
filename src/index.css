@@ -47,6 +47,7 @@ body{
   -moz-transition: 1.5s;
   -ms-transition: 1.5s;
   -o-transition: 1.5s;
+  position: relative !important;
 }
 .up{
   position: fixed;
@@ -56,12 +57,41 @@ body{
 }
 .down{
  top: 0 !important;
-  position: static !important;
+  position: fixed ;
    width: 100% !important;
   z-index: 999999999999 !important;
 }
-
+.nav-not-fixed{
+  position: relative !important;
+}
 /* slick list padding */
 .products-slick .slick-list{
   padding-bottom: 20px !important;
+}
+
+/* Scrollbar design */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF9900;
+  border-radius: 10px;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff99008c; 
 }
