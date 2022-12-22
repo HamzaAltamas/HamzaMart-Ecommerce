@@ -50,14 +50,14 @@ body{
   position: relative !important;
 }
 .up{
-  position: fixed;
+  position: fixed !important;
    width: 100%;
   top: -200px;
   z-index: 999999999999;
 }
 .down{
  top: 0 !important;
-  position: fixed ;
+  position: fixed !important;
    width: 100% !important;
   z-index: 999999999999 !important;
 }
