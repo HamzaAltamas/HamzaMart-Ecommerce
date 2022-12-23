@@ -11,18 +11,22 @@ const RootLayout = () => {
   // let [oldScroll, setOldScroll] = useState('')
 
   useEffect(() => {
+    
+    
     let oldScroll = 0
     window.addEventListener("scroll", (e) => {
     window.pageYOffset > oldScroll ?  setNavScroll(true) : setNavScroll(false)
       oldScroll = window.pageYOffset
       window.pageYOffset === 0 ? setNavtop(true) : setNavtop(false)
+    
+
   })
-     
+    
   },[])
    
   return (
     <>
-      <div className={`nav-wrapper ${navScroll ? "up" : "down"} ${navTop ? "nav-not-fixed" : ""} duration-500`}>
+      <div id="nav-wrapper" className={` ${navTop ? "nav-not-fixed" : ""} ${navScroll ? "up" : "down"}   duration-500`}>
         <Navbar />
       <Header />
       </div>
