@@ -4,9 +4,11 @@ import Images from './Images'
 import { BsFillSuitHeartFill } from 'react-icons/bs'
 import { FaCartPlus } from 'react-icons/fa'
 import { BsArrowRepeat } from 'react-icons/bs'
-import {AiFillStar} from "react-icons/ai"
+import { AiFillStar } from "react-icons/ai"
+import { Items } from './Pagination'
 
-const ProductCard = ({image,badge}) => {
+
+const ProductCard = ({image,badge }) => {
   return (
       <div className='px-[10px] font-nunito '>
           <div className='w-full group shadow-md hover:shadow-xl duration-500 rounded-md overflow-hidden '>

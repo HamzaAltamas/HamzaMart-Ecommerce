@@ -4,16 +4,17 @@ import ProductCard from './ProductCard';
 
 const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
-function Items({ currentItems }) {
+export function Items({ currentItems }) {
   return (
     <>
       {currentItems &&
-        currentItems.map((item,index) => (
-          <div className='w-[33%] mt-[20px]'>
+        currentItems.map((item, index) => (
+          
+          <div key={index} className='md:w-[50%] lg:w-[33%] mt-[20px]'>
              <ProductCard
               image="../src/assets/images/product1.png"   
-              badge={true}  
-              key={index}
+              badge={false}  
+            
             />
           </div>
         ))}
@@ -40,7 +41,7 @@ const Pagination = ({ itemsPerPage }) => {
 
   return (
     <>
-          <div className='flex flex-wrap  justify-between'>
+          <div className='md:flex md:flex-wrap  md:justify-between'>
               
           <Items currentItems={currentItems} />
           </div>
@@ -59,9 +60,9 @@ const Pagination = ({ itemsPerPage }) => {
         activeClassName="text-white bg-orange  "
           pageClassName="w-[45px] h-[45px] rounded-full flex justify-center  items-center shadow-lg font-nunito duration-500 hover:bg-orange hover:text-white"
         pageLinkClassName="w-full h-full flex justify-center items-center text white"    
-            containerClassName="flex gap-x-[15px] mt-7"
+            containerClassName="flex flex-wrap justify-center gap-x-[15px] gap-y-[15px] md:gap-y-[0] mt-7"
       />
-       <p className='absolute bottom-0 right-0 text-ashText font-nunito'>Products from {itemOffset} to {itemOffset + itemsPerPage} of 80</p>
+      <p className='mt-[25px] text-center  text-ashText font-nunito'>Products from {itemOffset} to {itemOffset + itemsPerPage} of { items.length}</p>
     </>
   );
 }

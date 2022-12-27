@@ -26,7 +26,7 @@ const RootLayout = () => {
    
   return (
     <>
-      <div id="nav-wrapper" className={` ${navTop ? "nav-not-fixed" : ""} ${navScroll ? "up" : "down"}   duration-500`}>
+      <div id="nav-wrapper" className={` ${navTop ? "nav-not-fixed" : ""} ${navScroll && "up" }   duration-500`}>
         <Navbar />
       <Header />
       </div>
