@@ -8,14 +8,14 @@ const Addvertise = () => {
   return (
     <div className='mt-5 md:mt-[70px] lg:mt-[100px]'>
       <Container>
-       <Flex className="md:flex gap-x-[10px] md:gap-[20px]"> 
+       <Flex className="md:flex gap-x-[15px] md:gap-[20px]"> 
          <div className='md:w-2/4'>
             <Link to="#">
                 <Images imgsrc="../src/assets/images/add1.png" className="w-full h-auto"/>
             </Link>
          </div>
-         <div className='md:w-2/4 mt-[10px] md:mt-0 lg:mt-0'>
-            <Link to="#" className='flex flex-col gap-y-[10px] md:gap-[20px]'>
+         <div className='md:w-2/4 mt-[15px] md:mt-0 lg:mt-0'>
+            <Link to="#" className='flex flex-col gap-y-[15px] md:gap-[20px]'>
                       <Images imgsrc="../src/assets/images/add2.png" className="w-full h-auto" />
                         <Images imgsrc="../src/assets/images/add3.png" className="w-full h-auto"/>
             </Link>
