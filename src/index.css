@@ -48,7 +48,7 @@ body{
   -moz-transition: 1.5s;
   -ms-transition: 1.5s;
   -o-transition: 1.5s;
-  position: fixed !important;
+  position: fixed;
   top: 0 ;
   width: 100%;
   z-index: 999999999999999999;

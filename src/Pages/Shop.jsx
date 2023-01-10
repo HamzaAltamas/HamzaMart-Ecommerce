@@ -14,7 +14,7 @@ const Shop = () => {
       <Container>
         <BreadCrumbBanner title="Products" />
         <Flex className="flex gap-x-5">
-          <div className='w-[25%] bg-red-600'><LeftSIdebar/></div>
+          <div className='w-[25%] '><LeftSIdebar/></div>
           <div className='w-[75%] relative'>
             <Flex className="flex   justify-between px-[10px] gap-x-2">
               
